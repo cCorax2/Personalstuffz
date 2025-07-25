@@ -1,4 +1,5 @@
 --using packer as package manager
+--require("configs.base_settings")
 require('packer').startup(function(use)
     --packer itself
     use 'wbthomason/packer.nvim'
@@ -24,6 +25,13 @@ vim.cmd [[
 
     "line numbers
     set relativenumber
-    set nu rnu
     set cursorline
+    set nu
+		
+		"replace tab two spaces and other options
+		set tabstop=2
+		set shiftwidth=2
+		set expandtab
+		set smartindent
+		set termguicolors
 ]]
