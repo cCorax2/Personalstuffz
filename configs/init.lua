@@ -1,7 +1,7 @@
 --using packer as package manager
 --require("configs.base_settings")
 require('packer').startup(function(use)
-    --packer itself
+  --packer itself
     use 'wbthomason/packer.nvim'
 
     --some juicy gruvbox colorscheme
@@ -10,7 +10,6 @@ require('packer').startup(function(use)
     
     --nice ugly statusbar
     use 'datwaft/bubbly.nvim'
-
 
 end)
 
@@ -27,11 +26,16 @@ vim.cmd [[
     set relativenumber
     set cursorline
     set nu
-		
-		"replace tab two spaces and other options
-		set tabstop=2
-		set shiftwidth=2
-		set expandtab
-		set smartindent
-		set termguicolors
+
+    "replace tab two spaces and other options
+    set tabstop=2
+    set shiftwidth=2
+    set expandtab
+    set smartindent
+    set termguicolors
+
+    "Make space character visible for indention
+    set list
+    set lcs+=space:.
 ]]
+
