@@ -1,0 +1,4 @@
+:lua pcall(function() vim.cmd [[somewrongcommand]] end)
+
+https://github.com/haskell/haskell-language-server
+https://microsoft.github.io/language-server-protocol/implementors/servers/
